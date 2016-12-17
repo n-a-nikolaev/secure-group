@@ -14,7 +14,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.ts(x?)$/, loader: 'babel-loader!ts-loader' }
+            { test: /\.ts(x?)$/, loader: 'ts-loader' }
         ]
     },
     plugins: [
