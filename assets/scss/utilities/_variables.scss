@@ -1,0 +1,68 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:#000 !default;
+$gray-dark: lighten($gray-base, 20%) !default;   // #333
+
+$brand-primary:  #da491c;
+$brand-secondary:#292929;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+$body-bg:         #fff !default;
+$link-color:        $brand-primary !default;
+$link-hover-color:  darken($brand-primary, 10%) !default; 
+$text-color:        $gray-dark !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-base: 'Open Sans', sans-serif !default;
+$font-family-alt: 'Raleway', sans-serif !default;
+
+$font-size-base:          16px !default;
+$font-size-large:         18px !default;
+$font-size-small:         14px !default;
+
+$font-weight-light:     300;
+$font-weight-regular:   400;
+$font-weight-semibold:  600;
+$font-weight-bold:      700;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+
+//== Forms
+//
+//##
+
+
+//== Navbar
+//
+//##
+$navbar-height:              62px !default;
+$navbar-bg:                rgba(17, 18, 21, .75) !default;
+// Main Navigation
+$nav-anchor-line-height:    20px;
+// Dropdown Menu
+$dropdown-menu-min-width: 227px;
+$dropdown-menu-bg: #111215;
+$dropdown-menu-padd: 25px 30px;
+
+
+//== Z-index
+//
+//##
+$zindex-dropdown-menu: 10;

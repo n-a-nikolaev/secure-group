@@ -1,0 +1,100 @@
+.navbar {
+    height: $navbar-height;
+    background: $navbar-bg;
+
+    .app-logo {
+        display: block;
+        float: left;
+        height: $navbar-height;
+        font: {
+            family: $font-family-alt;
+            size: 2.4rem;
+            weight: $font-weight-bold;
+        }
+        color: #fff;
+        line-height: $navbar-height;
+    }
+    .main-navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        font-family: $font-family-alt;
+        color: #fff;
+
+        @include breakpoint(md) {
+            position: static;
+            display: block;
+            width: auto;
+            float: right;
+        }   
+
+        .nav-item {
+            position: relative;
+            float: left;
+            padding: 0 25px;
+            height: $navbar-height;
+            &:last-child {
+                padding-right: 0;
+            } 
+            & > ul {
+                position: absolute;
+                top: 120%;
+                left: 0;
+                z-index: $zindex-dropdown-menu;
+                visibility: hidden;
+                @include opacity(0);
+                @include transition(all .2s ease-in);
+            }
+            &:hover {
+                color: $brand-primary;
+                & > ul {
+                    top: 100%;
+                    visibility: visible;
+                    @include opacity(1);
+                }
+            }
+        }
+        .nav-anchor {
+            display: block;
+            padding: ($navbar-height - $nav-anchor-line-height)/2;
+            font: {
+                size: 1.5rem;
+                weight: $font-weight-bold;
+            }
+            line-height: $nav-anchor-line-height;
+        }
+
+        .dropdown-menu {
+            min-width: $dropdown-menu-min-width;
+            padding: $dropdown-menu-padd;
+            background: $dropdown-menu-bg;
+            .dropdown-item {
+                margin-bottom: 16px;
+                color: #fff;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+            .dropdown-anchor {
+                font: {
+                    size: 1.5rem;
+                    weight: $font-weight-regular;
+                }
+            }
+        }
+    }
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        right: $grid-gutter-width;
+        margin-top: -10px;
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+}
