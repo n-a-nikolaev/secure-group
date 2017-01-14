@@ -39,6 +39,13 @@ a {
     color: inherit; 
 }
 
+button, 
+input[type="submit"] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
 :focus {
     outline: 0;
 }
