@@ -14,9 +14,10 @@ class App {
     public init() {
         setTimeout(() => {
             DOMElements.body.classList.remove('loading');
-        }, 1000);
+        }, 500);
         
         this.components.navbar.init()
+        var player = videojs('my-player');
     }
 }
 new App(AppServices, AppComponents);

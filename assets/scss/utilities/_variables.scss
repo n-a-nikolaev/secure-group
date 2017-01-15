@@ -53,7 +53,8 @@ $font-weight-bold:      700;
 //
 //##
 $navbar-height:              62px !default;
-$navbar-bg:                rgba(17, 18, 21, .75) !default;
+$navbar-bg:                #111215 !default;
+$navbar-bg-alpha:          rgba($navbar-bg, .75) !default;
 // Main Navigation
 $nav-anchor-line-height:    20px;
 // Dropdown Menu
@@ -64,5 +65,7 @@ $dropdown-menu-padd: 25px 30px;
 //== Z-index
 //
 //##
+$zindex-header: 10;
 $zindex-dropdown-menu: 10;
+$zindex-hero-section: 9;
 $zindex-loader: 20;

@@ -27,6 +27,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "@types/videojs": "0.0.31",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "lite-server": "^2.2.2",

@@ -7,7 +7,8 @@
         "sourceMap": true,
         "target": "es5",
         "types": [
-            "jquery"
+            "jquery",
+            "videojs"
         ]
     }
 }

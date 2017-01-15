@@ -1,0 +1,99 @@
+.main-section--hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -$navbar-height;
+    z-index: $zindex-hero-section;
+}
+
+.hero-video {
+    position: relative;
+    z-index: 10;
+    @include fitToParent;
+    .video-js {
+        @include fitToParent;
+    }
+    .vjs-poster {
+        background: {
+            color: transparent;
+            size: cover;
+            position: 50% 0;
+        }
+    }
+    .vjs-big-play-button { display: none; }
+}
+
+.hero-mask-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include fitToParent;
+    background: {
+        color: rgba(0,0,0,.3);
+        image: url('../img/bg-pattern-alpha.png');
+    }
+    z-index: 12;
+}
+
+.hero-mask--content {
+    @include fitToParent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-mask--title {
+    position: relative;
+    @include center-block;
+    margin-bottom: 50px;
+    padding: 0 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    font: {
+        family: "Open Sans", sans-serif;
+        weight: 400;
+        size: 6rem;
+    }
+    border-right: 1px solid rgba(255,255,255,.5);
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.hero-mask--divider {
+    @include size(145px, 2px);
+    @include center-block;
+    margin-bottom: 50px;
+    background: $brand-primary;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255,255,255,.5); }
+}
+
+.hero-mask--text {
+    font: {
+        size: 1.6rem;
+    }
+    line-height: 3rem;
+    @include breakpoint(md) {
+        max-width: 50vw;
+        @include center-block;
+    }
+}
+
+
+.hero-mask--footer {
+    position: absolute;
+    bottom: 35px;
+    right: 55px;
+}

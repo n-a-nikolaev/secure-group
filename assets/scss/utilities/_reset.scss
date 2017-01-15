@@ -15,7 +15,7 @@ html {
 }
 
 address, caption, cite, code, dfn, em, 
-h1, h2, h3, h4, h5, h6, strong, th, var {
+h1, h2, h3, h4, h5, h6, var {
     font-weight: normal;
     font-style: normal;
 }
@@ -46,9 +46,8 @@ input[type="submit"] {
     background: transparent;
 }
 
-:focus {
-    outline: 0;
-}
+:focus { outline: 0; }
 
 :link,
 :visited { text-decoration:none }
+

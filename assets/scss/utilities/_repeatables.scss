@@ -1,0 +1,17 @@
+.table-like,
+.table-cell-like { vertical-align: middle; }
+
+.table-like         { display: table; }
+.table-cell-like    { display: table-cell; }
+
+@each $align in left, right, center {
+    .ta-#{$align} {
+        text-align: $align;
+    }
+}
+
+@each $transform in uppercase, lowercase, capitalize {
+    .tt-#{str-slice(#{$transform}, 0, 5)} {
+        text-transform: $transform;
+    }
+}

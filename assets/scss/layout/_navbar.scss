@@ -1,0 +1,158 @@
+.navbar {
+    position: relative;
+    height: $navbar-height;
+    background: $navbar-bg-alpha;
+
+    .app-logo {
+        display: block;
+        float: left;
+        height: $navbar-height;
+        font: {
+            family: $font-family-alt;
+            size: 2.4rem;
+            weight: $font-weight-bold;
+        }
+        color: #fff;
+        line-height: $navbar-height;
+    }
+
+    .main-navigation {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        font-family: $font-family-alt;
+        color: #fff;
+        background: rgba($navbar-bg, .85);
+        border-top: 1px solid $gray-dark;
+        @include opacity(0);
+        visibility: hidden;
+        @include transition(top .3s ease-out);
+        @include transition(opacity .6s ease-out);
+        
+        @include breakpoint(md) {
+            position: static;
+            display: block;
+            width: auto;
+            float: right;
+            background: transparent;
+            border-top: 0;
+            @include opacity(1);
+            visibility: visible;
+        }   
+    }
+
+    .nav-item {
+        position: relative;
+        border-bottom: 1px solid lighten($gray-base, 20%);
+        // breakpoints
+        @include breakpoint(md) {
+            float: left;
+            height: $navbar-height;
+            padding: 0 25px;
+            border-bottom: 0;
+            &:last-child {
+                padding-right: 0;
+            } 
+    
+            &:hover {
+                color: $brand-primary;
+                & > ul {
+                    top: 100%;
+                    visibility: visible;
+                    @include opacity(1);
+                }
+            }    
+        }
+    }
+
+    .nav-anchor {
+        display: block;
+        padding: 10px 15px;
+        font: {
+            size: 1.5rem;
+            weight: $font-weight-bold;
+        }
+        line-height: $nav-anchor-line-height;
+        // breakpoints
+        @include breakpoint(md) {
+            padding: ($navbar-height - $nav-anchor-line-height)/2;
+        }
+    }
+
+    .dropdown-menu {
+        padding: $dropdown-menu-padd;
+        background: rgba($dropdown-menu-bg, .90);
+        display: none;
+        @include transition(all .2s ease-in);
+        // breakpoints
+        @include breakpoint(md) {
+            position: absolute;
+            top: 120%;
+            left: 0;
+            z-index: $zindex-dropdown-menu;
+            display: block;
+            visibility: hidden;
+            min-width: $dropdown-menu-min-width;
+            @include opacity(0);
+        }
+        // active state
+        &.active {
+            display: block;
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+        
+    }
+
+    .dropdown-item {
+        margin-bottom: 16px;
+        color: #fff;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover {
+            color: $brand-primary;
+        }
+    }
+
+    .dropdown-anchor {
+        font: {
+            size: 1.5rem;
+            weight: $font-weight-regular;
+        }
+    }
+
+    .opened {
+        top: 100%;
+        @include opacity(1);
+        visibility: visible;
+    }
+
+    .btn-expander {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include size(40px, 40px);
+        font-size: 3rem;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        border-left: 1px solid $gray-dark;
+        // breakpoints
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        right: $grid-gutter-width / 2;
+        margin-top: -10px; 
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+}
