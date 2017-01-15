@@ -79,7 +79,7 @@
         <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
         <section id="section-hero" class="main-section main-section--hero">
             <div class="hero-video">
-                <video id="my-player" class="video-js vjs-default-skin" controls preload="auto" poster="assets/img/parallax-bg.jpg" data-setup='{}'>
+                <video id="vjs-player" class="video-js vjs-default-skin" controls preload="auto" poster="assets/img/parallax-bg.jpg" data-setup='{}'>
                     <source src="assets/video/big_buck_bunny.mp4" type="video/mp4"></source>
                     <source src="assets/video/big_buck_bunny" type="video/ogg"></source>
                     <p class="vjs-no-js">
@@ -102,9 +102,13 @@
                     </div>
                 </div>
                 <div class="hero-mask--footer">
-                    <span class="tt-upper">Hero video controls</span>
-                    <button type="button">Play Video</button>
-                    <button type="button">Play Audio</button>
+                    <span class="hmf-element helper-text tt-upper">Hero video controls</span>
+                    <button type="button" id="vjs-play" class="hmf-element video-icon">
+                        <i class="icon-play"></i>
+                    </button>
+                    <button type="button" id="vjs-audio" class="hmf-element video-icon">
+                        <i class="icon-sound"></i>
+                    </button>
                 </div>
             </div>
         </section>

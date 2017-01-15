@@ -1,5 +1,6 @@
 import { DOMElements } from './dom-elements';
 import { NavbarComponent } from './components/navbar.component';
+import { VideoComponent } from './components/video.component';
 
 let navbar = new NavbarComponent({
     element: <HTMLElement>DOMElements.navbar,
@@ -7,6 +8,13 @@ let navbar = new NavbarComponent({
     navigation: <HTMLElement>DOMElements.navigation,
 });
 
+let video = new VideoComponent({
+    element: DOMElements.video,
+    playTrigger: DOMElements.play,
+    muteTrigger: DOMElements.mute
+})
+
 export const AppComponents = {
-    navbar: navbar
+    navbar: navbar,
+    video: video
 }

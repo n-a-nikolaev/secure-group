@@ -6,9 +6,8 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-
 $gray-base:#000 !default;
-$gray-dark: lighten($gray-base, 20%) !default;   // #333
+$gray-dark:  lighten($gray-base, 20%) !default;   // #333
 
 $brand-primary:  #da491c;
 $brand-secondary:#292929;
@@ -47,6 +46,13 @@ $font-weight-bold:      700;
 //== Forms
 //
 //##
+
+
+//== Icons
+//
+//##
+$icon-large-size: 42px;
+$icon-small-size: 24px;
 
 
 //== Navbar

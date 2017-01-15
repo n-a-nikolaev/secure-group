@@ -17,7 +17,7 @@ class App {
         }, 500);
         
         this.components.navbar.init()
-        var player = videojs('my-player');
+        this.components.video.init()
     }
 }
 new App(AppServices, AppComponents);
