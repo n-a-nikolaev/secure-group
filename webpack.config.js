@@ -20,6 +20,7 @@ module.exports = [{
             { test: /\.ts(x?)$/, loader: 'ts-loader' },
             { test: /\.css$/, loader: "css-loader" },
             { test: /\.scss$/, loaders: ["style-loader", "css-loader?minimize", "sass-loader"] },
+            { test: /\.handlebars$/, loader: "handlebars-loader" },
             { test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/, loader: 'url-loader?limit=100000' },
         ]
     },

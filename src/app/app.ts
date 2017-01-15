@@ -12,12 +12,15 @@ class App {
     }
 
     public init() {
+        // Prevent FOUC
         setTimeout(() => {
             DOMElements.body.classList.remove('loading');
         }, 500);
         
-        this.components.navbar.init()
-        this.components.video.init()
+        this.components.navbar.init();
+        this.components.video.init();
+        this.components.services.init();
     }
 }
+
 new App(AppServices, AppComponents);

@@ -8,5 +8,7 @@ export const DOMElements = {
     // Video Player Elements
     video: document.getElementById('vjs-player'),
     play: document.getElementById('vjs-play'),
-    mute: document.getElementById('vjs-audio')
+    mute: document.getElementById('vjs-audio'),
+    // List Services
+    services: document.getElementById('list-sevices')
 }

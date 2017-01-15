@@ -7,7 +7,8 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 $gray-base:#000 !default;
-$gray-dark:  lighten($gray-base, 20%) !default;   // #333
+$gray-dark:  #333;
+$gray-light: #eee;
 
 $brand-primary:  #da491c;
 $brand-secondary:#292929;
@@ -36,7 +37,6 @@ $font-weight-light:     300;
 $font-weight-regular:   400;
 $font-weight-semibold:  600;
 $font-weight-bold:      700;
-
 
 //== Buttons
 //
@@ -75,3 +75,4 @@ $zindex-header: 10;
 $zindex-dropdown-menu: 10;
 $zindex-hero-section: 9;
 $zindex-loader: 20;
+
