@@ -79,7 +79,7 @@
         <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
         <section id="section-hero" class="main-section main-section--hero">
             <div class="hero-video">
-                <video id="vjs-hero-player" class="video-js vjs-default-skin" controls preload="auto" poster="assets/img/parallax-bg.jpg"
+                <video id="vjs-hero-player" class="video-js vjs-default-skin" controls preload="auto" data-video-section="hero" poster="assets/img/parallax-bg.jpg"
                     data-setup='{}'>
                     <source src="assets/video/big_buck_bunny.mp4" type="video/mp4"></source>
                     <source src="assets/video/big_buck_bunny" type="video/ogg"></source>
@@ -181,10 +181,11 @@
         <!-- VIDEO & FAQ SECTION BEGIN -->
         <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
         <section id="section-video-faq" class="main-section main-section--video-faq">
-            <div class="container-fliud">
-                <div class="row row-no-gutter">
-                    <div class="col-md-6">
-                        <video id="vjs-faq-player" class="video-js vjs-default-skin" controls preload="auto" poster="assets/img/parallax-bg.jpg"
+            <div class="container-fliud fit-to-parent">
+                <div class="row row-no-gutter fit-to-parent">
+                    <div class="col-md-6 video-faq-wrapper">
+                        <div class="overlay"></div>
+                        <video id="vjs-faq-player" class="video-js vjs-default-skin" controls preload="auto" data-video-section="faq" poster="assets/img/parallax-bg.jpg"
                             data-setup='{}'>
                             <source src="assets/video/big_buck_bunny.mp4" type="video/mp4"></source>
                             <source src="assets/video/big_buck_bunny" type="video/ogg"></source>
@@ -195,12 +196,31 @@
                                 </a>
                             </p>
                         </video>
-                        <button type="button" id="vjs-faq-play" class="hmf-element video-icon">
+                        <button type="button" id="vjs-faq-play" class="faq-play-video">
                             <i class="icon-play"></i>
                         </button>
                     </div>
                     <div class="col-md-6">
-
+                        <div class="faq-accordion">
+                            <div id="js-faq-accordion" class="accordion">
+                                <div class="acc-item">
+                                    <div class="acc-item-trigger"><i class="acc-item-icon icon-plus-circled"></i>Wise busy past both park when an ye no Nay likely her</div>
+                                    <div class="acc-item-content">Enim ea laboris esse pariatur aliquip sit dolore id in esse aliquip. Esse eu excepteur adipisicing Lorem proident consequat elit aute minim incididunt deserunt.</div>
+                                </div>
+                                <div class="acc-item">
+                                    <div class="acc-item-trigger"><i class="acc-item-icon icon-plus-circled"></i> Written enquire painful ye to offices forming it</div>
+                                    <div class="acc-item-content">Exercitation ut sunt proident enim excepteur consequat velit elit fugiat esse fugiat reprehenderit Lorem aliquip. Non dolore ullamco consectetur reprehenderit Lorem duis culpa incididunt sunt anim aliquip mollit.</div>
+                                </div>
+                                <div class="acc-item">
+                                    <div class="acc-item-trigger"><i class="acc-item-icon icon-plus-circled"></i>In finished on he speaking suitable advanced if happiness</div>
+                                    <div class="acc-item-content">Nisi occaecat anim incididunt reprehenderit. Lorem fugiat fugiat duis nulla exercitation id irure aliqua aliqua officia laborum ad proident. Dolor amet ex et duis commodo ut consectetur in aliqua reprehenderit magna minim nisi.</div>
+                                </div>
+                                <div class="acc-item">
+                                    <div class="acc-item-trigger"><i class="acc-item-icon icon-plus-circled"></i>People as period twenty my extent as Set was better</div>
+                                    <div class="acc-item-content">Dolor elit officia ipsum occaecat ex id sunt tempor. Ea tempor ea fugiat ex ea non laborum cillum. Consectetur consectetur sint nisi duis aliqua ut ex dolore id aliqua. Ipsum qui nisi pariatur dolor voluptate consequat ad. Fugiat officia nisi velit occaecat ut amet. Ad est incididunt qui irure.</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,14 +230,13 @@
         <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
 
 
-        <section id="section-achievements" class="main-section main-section--achievements">
-
-        </section>
-
-        <section id="section-map"></section>
-        <section id="section-contacts"></section>
-
+        <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+        <!-- FOOTER BEGIN -->
+        <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
         <footer id="app-footer"></footer>
+        <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+        <!-- FOOTER END -->
+        <!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
     </div>
 
     <script src="http://vjs.zencdn.net/5.0.2/video.js"></script>

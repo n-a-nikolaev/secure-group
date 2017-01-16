@@ -20,6 +20,8 @@ class App {
         this.components.navbar.init();
         this.components.heroVideo.init();
         this.components.services.init();
+        this.components.faqVideo.init();
+        this.components.accordion.init();
     }
 }
 

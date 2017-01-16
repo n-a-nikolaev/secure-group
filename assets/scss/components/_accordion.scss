@@ -1,0 +1,28 @@
+.accordion {
+
+    .acc-item-trigger { 
+        font-size: 1.6rem;
+        padding: 18px 0;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    .acc-item-icon {
+        font-size: 2rem;
+        color: #ccc;
+        margin-right: 18px;
+    }
+
+    .acc-item-content { 
+        display: none;
+        padding: 12px;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #666;
+    }
+
+    .expanded {
+        .acc-item-icon { color: $brand-primary; }
+        .acc-item-content { display: block; }
+    }
+}

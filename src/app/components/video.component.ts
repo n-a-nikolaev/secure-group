@@ -29,8 +29,8 @@ export class VideoComponent {
     public init() {
         this.player = videojs(this.element).ready(() => {
             this.player.on('play', () => {
-                if (!DOMElements.body.classList.contains('video-played')) {
-                    DOMElements.body.classList.add('video-played');
+                if (!DOMElements.body.classList.contains(`${this.element.getAttribute('data-video-section')}-video-played`)) {
+                    DOMElements.body.classList.add(`${this.element.getAttribute('data-video-section')}-video-played`);
                 }
             })
         });
@@ -47,7 +47,7 @@ export class VideoComponent {
      */
     private initEvents(): void {
         this.playTrigger.addEventListener('click', this.togglePlay.bind(this), false);
-        this.muteTrigger.addEventListener('click', this.toggleSound.bind(this), false);
+        this.muteTrigger && this.muteTrigger.addEventListener('click', this.toggleSound.bind(this), false);
     }
 
     /**

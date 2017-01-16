@@ -27,7 +27,6 @@
         image: url('../img/bg-pattern-alpha.png');
     }
     z-index: 12;
-    
 }
 
 .hero-mask--content {
@@ -36,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    .video-played & {
+    .hero-video-played & {
         display: none;
     }
 }

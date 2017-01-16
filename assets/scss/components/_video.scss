@@ -1,12 +1,12 @@
 .video-js {
     @include fitToParent;
-}
-.vjs-poster {
-    background: {
-        color: transparent;
-        size: cover;
-        position: 50% 0;
+    .vjs-poster {
+        background: {
+            color: transparent;
+            size: cover;
+            position: 50% 0;
+        }
     }
+    .vjs-control-bar,
+    .vjs-big-play-button { display: none; }
 }
-.vjs-control-bar,
-.vjs-big-play-button { display: none; }

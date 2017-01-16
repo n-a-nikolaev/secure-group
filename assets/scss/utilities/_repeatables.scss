@@ -15,3 +15,6 @@
         text-transform: $transform;
     }
 }
+.fit-to-parent {
+    @include fitToParent();
+}
