@@ -1,0 +1,91 @@
+.main-section--parallax {
+    position: relative;
+    padding: 115px 0 330px;
+    background: {
+        image: url('../img/parallax-bg.jpg');
+        repeat: no-repeat;
+        position: 50% 0;
+        attachment: fixed;
+        size: cover;
+    }
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        @include size(100%, 100%);
+        background: rgba(#000, .5);
+    }
+
+    @include breakpoint(lg) {
+        padding: 115px 0 130px;
+    }
+}
+
+.parallax--title {
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: $font-weight-semibold;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    letter-spacing: -.3rem; 
+    
+    @include breakpoint(sm) {
+        font-size: 4rem;
+    }
+    @include breakpoint(md) {
+
+    }
+    @include breakpoint(lg) {
+        max-width: 430px;
+        font-size: 5.5rem;
+        line-height: 5rem;
+    }
+}
+
+.parallax-items {
+    .parallax-item {
+        position: absolute;
+
+        &.parallax-item--iphone {
+            z-index: $zindex-iphone;
+
+            @include size(107px, 225px);
+            top: 75%;
+            left: 50%;
+            margin-left: -107px;
+
+            @include breakpoint(sm) {
+                @include size(214px, 449px);
+                top: 65%;
+                margin-left: -214px;
+            }
+
+            @include breakpoint(lg) {
+                top: 200px;
+                left: 75%;
+            }
+        }
+
+        &.parallax-item--ipad {
+            z-index: $zindex-ipad;
+            @include size(198px, 280px);    
+            top: 65%;
+            left: 50%;
+            margin-left: -50px;
+
+            @include breakpoint(sm) {
+                top: 55%;
+                @include size(397px, 593px);    
+                margin-left: -180px;
+            }
+
+            @include breakpoint(lg) {
+                top: 70px;
+                left: 80%;
+            }
+        }
+    }
+}

@@ -22,6 +22,7 @@ module.exports = [{
             { test: /\.scss$/, loaders: ["style-loader", "css-loader?minimize", "sass-loader"] },
             { test: /\.handlebars$/, loader: "handlebars-loader" },
             { test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/, loader: 'url-loader?limit=100000' },
+            { test: /\.jpg$/, loader: "file-loader?name=[name].[ext]&publicPath=assets/img/&emitFile=false" }
         ]
     },
     plugins: [

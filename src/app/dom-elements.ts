@@ -6,9 +6,9 @@ export const DOMElements = {
     navigation: document.querySelector('.main-navigation'),
     hamburger: document.querySelector('.hamburger'),
     // Video Player Elements
-    video: document.getElementById('vjs-player'),
-    play: document.getElementById('vjs-play'),
-    mute: document.getElementById('vjs-audio'),
+    video: document.getElementById('vjs-hero-player'),
+    play: document.getElementById('vjs-hero-play'),
+    mute: document.getElementById('vjs-hero-audio'),
     // List Services
     services: document.getElementById('list-sevices')
 }

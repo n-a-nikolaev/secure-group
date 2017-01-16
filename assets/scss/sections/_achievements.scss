@@ -1,0 +1,20 @@
+.main-section--achievements {
+    position: relative;
+    padding: 300px 0 300px;
+    background: {
+        image: url('../img/parallax-bg-2.jpg');
+        repeat: no-repeat;
+        position: 50% 0;
+        attachment: fixed;
+        size: cover;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        @include size(100%, 100%);
+        background: rgba(#000, .35);
+    }
+}

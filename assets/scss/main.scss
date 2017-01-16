@@ -9,10 +9,16 @@
 @import "utilities/entypo";
 @import "utilities/base";
 
+@import "components/video";
+@import "components/buttons";
+
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navbar";
 
 @import "sections/hero";
 @import "sections/specialty";
+@import "sections/parallax";
+@import "sections/video-faq";
+@import "sections/achievements";
 

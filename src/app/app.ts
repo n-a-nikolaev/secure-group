@@ -18,7 +18,7 @@ class App {
         }, 500);
         
         this.components.navbar.init();
-        this.components.video.init();
+        this.components.heroVideo.init();
         this.components.services.init();
     }
 }

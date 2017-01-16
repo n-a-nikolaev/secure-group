@@ -19,6 +19,26 @@
     }
 }
 
+.heading-bravo {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    color: #fff;
+    &:after {
+        content: '';
+        position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 85px;
+         height: 1px;
+         background: $brand-primary;
+    }
+
+}
+
+
 
 // Paragraphs
 .paragraph-alpha,

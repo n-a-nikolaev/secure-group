@@ -68,6 +68,7 @@ export class ServiceListComponent {
     }
 
     private onExpandServiceBtnClick(){
+        // TODO
         console.log(this);
     }
 

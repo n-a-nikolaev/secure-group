@@ -15,18 +15,6 @@
     position: relative;
     z-index: 10;
     @include fitToParent;
-    .video-js {
-        @include fitToParent;
-    }
-    .vjs-poster {
-        background: {
-            color: transparent;
-            size: cover;
-            position: 50% 0;
-        }
-    }
-    .vjs-control-bar,
-    .vjs-big-play-button { display: none; }
 }
 
 .hero-mask-layer {

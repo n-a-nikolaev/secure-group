@@ -1,0 +1,41 @@
+// Buttons
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 2px;
+    @include transition(background .2s ease-out);
+    @include breakpoint(sm) {}
+    @include breakpoint(md) {}
+    @include breakpoint(lg) { padding: 23px 60px; }
+}
+
+.btn-primary {
+    background: $brand-primary;
+    &:hover {
+        background: $brand-secondary;
+    }
+}
+
+.btn-secondary {
+    background: $brand-secondary;
+    &:hover {
+        background: $brand-primary;;
+    }
+}
+
+// Buttons group
+.btn-group {
+    .btn + .btn {
+        margin-left: 5px;
+    }
+}

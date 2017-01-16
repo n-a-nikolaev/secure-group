@@ -9,7 +9,7 @@ let navbar = new NavbarComponent({
     navigation: <HTMLElement>DOMElements.navigation,
 });
 
-let video = new VideoComponent({
+let heroVideo = new VideoComponent({
     element: DOMElements.video,
     playTrigger: DOMElements.play,
     muteTrigger: DOMElements.mute
@@ -21,6 +21,7 @@ let services = new ServiceListComponent({
 
 export const AppComponents = {
     navbar: navbar,
-    video: video,
-    services: services
+    heroVideo: heroVideo,
+    services: services,
+    faqVideo: {}
 }
